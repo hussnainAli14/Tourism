@@ -1,0 +1,147 @@
+.imageContainer1{
+    width: calc((33.3% - 1 * 1%) / 1);
+    background-image: url('../../assets/carContainer.jpg');
+    height: 12rem;
+    background-size:cover;
+    border-radius: 1rem;
+    padding: 1rem 0rem;
+    margin: 0.5rem 0px;
+    margin-right: .5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-position: right;
+}
+.imageContainer4{
+    width: calc((37% - 2 * 1%) / 1);
+    background-image: url('../../assets/ferrari.jpg');
+    height: 14rem;
+    background-size:cover;
+    border-radius: 1rem;
+    padding: 1rem 0rem;
+    margin: 0.5rem 0px;
+    margin-right: .5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-position: center;
+}
+.imageContainer2{
+    width: calc((33.3% - 1 * 1%) / 1);
+    background-image: url('../../assets/card-product2.png');
+    height: auto;
+    background-size:cover;
+    border-radius: 0.7rem;
+    padding: 1rem 0rem;
+    margin: 0.2rem 0px;
+    margin-left: .3rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-position: center;
+}
+.imageContainer3{
+    width: calc((33.3% - 1 * 1%) / 1);
+    background-image: url('../../assets/Rectangle\ 427.png');
+    height: auto;
+    background-size:cover;
+    border-radius: 0.7rem;
+    padding: 1rem 0rem;
+    margin: 0.2rem 0px;
+    margin-left: .3rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-position: right;
+
+}
+.imageMain{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 50%;
+    margin-top: 0rem;
+    margin-left: 1.0rem;
+    margin-bottom: 0rem;
+}
+.imageSub{
+    color: white;
+    font-size: .7rem;
+    font-weight: 500;
+    width: 60%;
+    margin-top: 0rem;
+    margin-left: 1.0rem;
+    color:#0066CC    ;
+}
+
+@media (max-width:734px) {
+    .imageContainer1{
+        width: 100%;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30rem;
+
+    }
+    .imageContainer2{
+        width: 48%;
+        height: 62vh;
+    }
+    .imageMain{
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+        width: 85%;
+        max-width: 300px;
+        margin:0 auto ;
+        padding-top: 40px;
+    }
+    .imageSub{
+        display: none;
+    }
+    .imageContainer4{
+        width: 100%;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30rem;
+    }
+
+}
+
+@media (min-width:734px) and (max-width:1000px){
+    .imageContainer1{
+        /* margin: 1rem 0.5rem; */
+        width: calc((33.3% - 2 * 1%) / 1);
+
+    }
+    .imageContainer3{
+        /* margin: 1rem 0.5rem; */
+        margin: 1rem 0.5px;
+    }
+    .imageContainer2{
+        /* margin: 1rem 0.5rem; */
+        margin:1rem 0.5px;
+    }
+}
+
+@media (min-width: 734px) and (max-width: 1200px) {
+    .imageContainer1{
+        height:12rem;
+        width: calc((100% - 2 * 1%) / 2)
+    }
+    .imageMain{
+        font-size: 1rem;
+    }
+    .imageSub{
+        font-size: 0.5rem;
+    }
+    .imageContainer2{
+        height: inherit;
+  width: calc((100% - 4 * 1%) / 2);
+  margin: 5px 0px 10px 0px;
+
+    }
+    .imageContainer3{
+        height: inherit;
+  width: calc((100% - 4 * 1%) / 2);
+  margin: 5px 0px 10px 0px;
+
+    }
+}

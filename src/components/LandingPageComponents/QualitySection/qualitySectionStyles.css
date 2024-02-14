@@ -1,0 +1,108 @@
+.qualityMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+.qualityMain .firstSection{
+    width: 15rem;
+    /* margin: 0 auto; */
+    padding-left: 4rem;
+   
+}
+.qualityMain  .firstSectionMainText{
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    font-family: 'Inter',sans-serif;
+    
+
+}
+.qualityMain .firstSectionSubText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    padding-top: 2px;
+    color: #0171E3;
+    font-weight: 500;
+    text-align: left;
+    font-family: 'Inter',sans-serif;
+
+}
+.favIcon{
+    background-color: transparent;
+    padding-top: 2px;
+    padding-left: 5px;
+color: #06C;
+}
+.qualityMain .secondSection img{
+    width: 30rem;
+    height: auto;
+}
+/* .qualityMain .secondSection {
+    height: 55vh;
+
+} */
+
+@media (max-width:734px) {
+    .qualityMain{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   .qualityMain .firstSection{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+   .qualityMain .firstSectionMainText{
+        text-align: center;
+        font-size: 1.5rem;
+    
+    }
+   .firstSectionSubText{
+        text-decoration: underline;
+        text-align: center;
+        align-self: center;
+        padding-bottom: 4rem;
+        justify-content: center;
+    }
+    .qualityMain .secondSection img{
+        width: 80vw;
+        margin: 0 auto;
+        height: auto;
+    }
+}
+
+@media (min-width:734px) and (max-width:1200px){
+    .qualityMain{
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .qualityMain .firstSection{
+            width: 20rem;
+            padding-left: 0;
+            /* margin: 0 auto; */
+        }
+        .qualityMain .firstSectionMainText{
+            text-align: center;
+        }
+        .firstSectionSubText{
+            text-align: center;
+            align-self: center;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+        .qualityMain .secondSection img{
+            width: 45rem;
+            margin: 0 auto;
+            height: auto;
+        }
+}
+

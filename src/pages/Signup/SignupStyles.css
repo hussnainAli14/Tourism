@@ -1,0 +1,106 @@
+.signup_main {
+  background-color: #010101;
+  padding: 0;
+  margin: 0;
+  height: 120dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+.image_container {
+  width: 290px;
+  position: absolute;
+  z-index: 1;
+}
+.signup_main_image {
+  top: 0%;
+  width: 100%;
+}
+.signup_main_container {
+  background-image: linear-gradient(
+    150deg,
+    #010101 65%,
+    rgba(211, 211, 211, 0.02) 75%,
+    rgba(211, 211, 211, 0.04) 85%,
+    rgba(211, 211, 211, 0.06) 90%,
+    rgba(211, 211, 211, 0.1) 100%
+  );
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.2) ;
+  padding: 135px 60px 100px 60px ;  
+  width: 350px;
+  position: relative;
+  top: 100px;
+}
+
+.black_border{
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-2.5px);
+    position: absolute;
+    border-top: 10px solid #010101;
+    align-self:center;
+    transition: width 0.3s ease;
+}
+.grey_border{
+    border-left: 5px solid rgba(0,0,0,0.6);
+    border-bottom: 5px solid rgba(0,0,0,0.6);
+    border-bottom-left-radius:27px ;
+    position: absolute;
+    top: 55%;
+    height: 45%;
+    width: 25%;
+    left: -1px;
+    right: 0;
+    bottom: 0;
+}
+.small-btn-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-icon{
+  position: absolute;
+  top: 4%;
+  left: 92%;
+  right: 0;
+  cursor: pointer;
+}
+.signup-mobile-icon{
+  display: none;
+}
+@media (max-width:734px){
+  .signup_main_container{
+    border: none;
+    background: transparent;
+  padding: 80px 10px 0px 10px ;  
+    width: 70%;
+  }
+  .black_border{
+    display: none;
+  }
+  .signup-icon{
+    display: none;
+  }
+  .signup-mobile-icon{
+    position: absolute;
+    display: block;
+    z-index: 2;
+    background-color: transparent;
+    height: 40px;
+    width: 42px;
+    border-radius: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: 17%;
+    right: 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    top: 10%;
+  }
+}
+
+/* @media (min-width:) {
+  
+} */

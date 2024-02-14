@@ -1,0 +1,379 @@
+
+.newClassFleet{
+  display: flex;
+  justify-content: center;
+}
+.fleetHeroMain {
+  position: relative;
+  height: 20rem;
+  /* margin-top: 2rem; */
+  width: 45rem;
+  /* margin: 5rem 7% 0rem 7%;
+  /* margin-top: 2rem; */
+  /* width: 95vw; */
+  /* margin: 5rem 7% 0rem 7%; */
+  background-image: url("../../../assets/cars.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  border-radius: 33px;
+  background-color: white;
+  font-size: 4rem;
+}
+.firstPortionMainText {
+  position: absolute;
+  top: 20%;
+  left: 3rem;
+  width: 33%;
+  margin: 0;
+  padding: 4rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3.5vw;
+  font-weight: 500;
+  overflow: hidden;
+}
+.favIcon {
+  font-size: 0.9rem;
+  background-color: transparent;
+}
+/* .secondPortion{
+    object-fit: cover;
+     width: 70%;
+      border-radius: "20px";
+} */
+.circularBorder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid linear-gradient(90deg, red, blue); */
+  border-radius: 50%; 
+  position: relative;
+  text-align: center;
+  height:2rem;
+  width:2rem;
+  margin: 10px;
+  transition:border-radius 0.5s ease-in-out;
+  align-items: center;
+  /* margin-top: 1rem; */
+  /* transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
+}
+.outer_shadow {
+  box-shadow:-0.08rem 0.05rem 10px red , 0.1rem -0.08rem 10px blue
+ 
+}
+
+
+.navigate_icon{
+  margin:0;
+  position: absolute;
+  align-self: center;
+  right: 20%;
+  top: 20%;
+}
+.fleetBtn {
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  
+  background-image: linear-gradient(90deg, red, blue);
+  color: white;
+  border: none;
+  display: none;
+  transition:slideIn 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+
+/* .gradient-border{
+  border-image-slice: 1;
+    border-image-width: 2px;
+    background-image: linear-gradient(90deg, red, blue);
+    border-radius: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 20px;
+} */
+
+.fleetHeroButton{
+  /* display: none; */
+  /* cursor: pointer; */
+  border: 1px solid linear-gradient(90deg, red, blue);
+  background:  linear-gradient(45deg, red, blue);
+  height: 1.2rem;
+  width: 5rem;
+  margin-left: .4rem;
+  padding: .4rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  /* animation: slideIn 0.5s ease-in; */
+color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.fleet_btn_text{
+  color: 'black';
+    font-weight: 500;
+    text-align: 'center';
+    margin: 0;
+    font-size: .7rem;
+    position: 'absolute';
+   opacity: 0; 
+    /* transition: opacity 0.5s ease-in-out;  */
+    color: white;
+    padding-left: 10px;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(10%);
+  }
+}
+/* @keyframes btnAnimate {
+  0%{
+    width: 0rem;
+  }
+  50%{
+    width: 4rem;
+  }
+  100%{
+    width: 5rem;
+  }
+}
+@keyframes circularBtnAnimate {
+  0%{
+    width: 2rem;
+  }
+  50%{
+    width: 3rem;
+  }
+  100%{
+    border: none;
+  }
+} */
+.circularBorder:hover {
+  width: 5rem;
+  /* animation: circularBtnAnimate 0.5s; */
+  border-radius: 20px;
+  background:  linear-gradient(45deg, red, blue);
+  /* border: none; */
+}
+
+.circularBorder:hover .fleet_btn_text {
+  opacity: 1; 
+  /* animation: btnAnimate 0.5s 0.5s ; */
+
+ 
+}
+
+.circularBorder:hover .navigate_icon{
+right: 70%;
+}
+.fleet_mobile_image_container{
+  height: 65%;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: url("../../../assets/fleetMobilesCarImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  display: none;
+}
+/* .fleet_mobile_image{
+  height: 100%;
+  width: 100%;
+  object-fit:;
+} */
+/* .circularBorder:hover + .fleetHeroButton {
+  display: inline-block; 
+  cursor: pointer;
+}
+.circularBorder:hover {
+  opacity: 0;
+  display: none;
+  cursor: pointer;
+} */
+
+
+  @media (min-width:550px) and (max-width:734px) {
+  .fleetHeroMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-image: none;
+    height: 10vh;
+
+  }
+  .firstPortion {
+    padding-top: 0rem;
+   margin: 0 auto;
+  }
+  .firstPortionMainText {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 3rem;
+  }
+  .circularBorder {
+    display: none;
+  }
+  .secondPortion img {
+    height: 50%;
+    width: 100%;
+  }
+  .fleet_mobile_image_container{
+    display: block;
+  }
+}
+@media (max-width: 550px) {
+  .fleetHeroMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-image: none;
+    height: 10vh;
+  }
+  .firstPortion {
+    padding-top: 0rem;
+   margin: 0 auto;
+  }
+  .firstPortionMainText {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 3rem;
+  }
+  .circularBorder {
+    display: none;
+  }
+  .secondPortion img {
+    height: 55%;
+    width: 100%;
+  }
+  .fleet_mobile_image_container{
+    display: block;
+    background-size: cover;
+  }
+}
+@media (min-width:734px) and (max-width:1200px)  {
+  .fleetHeroMain{
+    width: 35rem;
+  }
+  .firstPortionMainText {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 734px) and (max-width: 2200px) {
+  /* .fleetHeroMain {
+    height: 70vh;
+  } */
+  .firstPortionMainText {
+    top: 25%;
+    left: 2rem;
+    /* padding: 3rem; */
+    padding: 0;
+    /* font-size: 1.5rem; */
+    font-weight: 700;
+    width: 35%;
+  }
+  .circularBorder {
+    height:1.5rem;
+    width:1.5rem;
+  }
+  .fleetHeroButton {
+    padding: 0rem;
+    font-size: 0.7rem
+  }
+}
+
+@media (min-width: 1450px) and (max-width: 2200px) {
+.navigate_icon{
+  top: 15%;
+  right: 15%;
+}
+}
+@media (min-width: 1380px) and (max-width: 2200px) {
+
+  .firstPortionMainText {
+    top: 25%;
+    left: 2rem;
+    padding: 0;
+    font-weight:600;
+    width: 35%;
+    margin: 0 auto;
+  }
+  .circularBorder {
+    height:2rem;
+    width:2rem;
+  }
+  .fleetHeroButton {
+    /* height:2rem; */
+    width:4rem;
+    padding: 0.2rem 1rem;
+  }
+  .navigate_icon{
+    height: 35px;
+    width: 35px;
+    top: 15%;
+    right: 10%;
+  }
+  
+}
+@media (min-width: 1380px) and (max-width: 1650px) {
+
+  .firstPortionMainText {
+ 
+    /* font-size: 2.5rem; */
+    width: 40%;
+    padding-bottom: 4rem;
+  }
+  .circularBorder {
+    height:1.3rem;
+    width:1.3rem;
+  }
+  .fleetHeroButton {
+    /* height:1.3rem; */
+   font-size: 0.9rem;
+  }
+  .navigate_icon{
+    height: 25px;
+    width: 25px;
+    top: 12%;
+    right: 7%;
+  }
+}
+
+
+
+@media (min-width:2200px) {
+  .navigate_icon{
+    height: 35px;
+    width: 35px;
+    top: 15%;
+    right: 10%;
+  }
+}
+
+

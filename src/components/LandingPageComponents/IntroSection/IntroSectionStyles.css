@@ -1,0 +1,50 @@
+.introMain{
+    background-image: url('../../../assets/TechnicaBG.jpg');
+    font-family: 'Inter',sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-box {
+    /* margin: 25vh 20vw; */
+    margin: 7rem 6rem;
+    text-align: center; 
+    width: 44rem;
+
+}   
+
+
+.center-box p {
+    color:white;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 600;
+    
+}
+
+    @media (min-width: 1200px){
+        .center-box p { 
+            /* font-size: 8.5vh; */
+            font-size: 3.5rem;
+        };
+    }
+    @media (min-width:734px) and (max-width:1200px) {
+        .center-box {
+            width: 30rem;
+        
+        }  
+    }
+    @media (max-width:734px){
+        .center-box{
+    margin: 0vh 10vw;
+        }
+        .center-box p {
+            font-size: 1.5rem;
+        };
+    }

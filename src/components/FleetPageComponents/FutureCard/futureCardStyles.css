@@ -1,0 +1,70 @@
+.futureCardMain {
+  background-color: black;
+  padding: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 0.5rem 0rem;
+}
+.futureCardMain img {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.futureMainText {
+  color: white;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  padding-right: 1rem;
+  width: 50%;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  padding-left: 2rem;
+}
+.futureSubText {
+  color: #06c;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-right: 5rem;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  text-align: left;
+  padding-left: 2rem;
+
+}
+
+@media (max-width: 734px) {
+  .futureCardMain {
+    flex-direction: column;
+    margin: 0;
+  }
+  .futureCardMain img {
+    width: 100%;
+  }
+  .futureMainText {
+    text-align: start;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 734px) and (max-width: 1200px) {
+  .futureMainText {
+    font-size: 1.5rem;
+    text-align: start;
+    width: 70%;
+    margin-left: 30px;
+  }
+  .futureSubText {
+    font-size: 0.5rem;
+    text-align: start;
+    margin-left: 30px;
+  }
+}

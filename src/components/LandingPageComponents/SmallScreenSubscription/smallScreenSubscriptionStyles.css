@@ -1,0 +1,63 @@
+.smallSubscription{
+    background-color: #161617;
+    border-radius: 10px;
+    /* min-height: 90vh; */
+    padding: 2rem 3rem;
+}
+
+.mainHeading{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+.span{
+    color: #0171E3;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.smallMainPrice{
+    color: gray;
+    font-size: .8rem;
+    margin: 0;
+    padding-bottom: .9rem;
+    width: 80%;
+}
+.smallSubImg{
+width: 80%;
+}
+
+.swiperBtn{
+    /* position: fixed; */
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items:flex-end;
+  cursor: pointer;
+}
+.lineSeparatorSmall {
+    width: 80%;
+    height: 1px;
+    background-color: gray; /* Adjust the color as needed */
+    margin: .4rem 0; /* Adjust the margin as needed */
+    border: none;
+  }
+.circle{
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 2px;
+}
+.deailsCategoriesSmall{
+    font-size: .7rem;
+    color: lightgray;
+font-family: Inter;
+width: 80%;
+
+}
+@media (min-width:300px) and (max-width:600px){
+    .screenVisibility {display: block;}
+}
+@media (min-width:600px) {
+    .screenVisibility {display: none;}
+}

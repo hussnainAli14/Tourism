@@ -1,0 +1,399 @@
+
+.info_main_image{
+    width: 100%;
+    height: 84vh;
+    object-fit: cover;
+    /* position: relative; */
+
+}
+.speed_details_container{
+    position: absolute;
+    top: 80%;
+    right: 8%;
+    background-color: rgba(217, 217, 217, 0.30);
+    padding: 2.5vh 2vw;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:220px;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.speed-text{
+    padding: 0 0 10px 0;
+    margin:0;
+  font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+.speed-value{
+    padding: 0;
+    margin:0;
+  font-family: "Inter", sans-serif;
+
+    font-size: 26px;
+    font-weight: 400;
+}
+.speed-relative-time{
+    font-size: 18px;
+  font-family: "Inter", sans-serif;
+
+}
+
+.selected_car_container{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionImages{
+    display: flex;
+}
+.section_image{
+    height: 30px;
+    width: 30px;
+    margin: 20px 20px 0 0;   
+    
+}
+#selected_section_image{
+    border: 2px solid rgba(0, 0, 255,1);
+    border-radius: 50%;
+    padding: 2px;
+    margin: 17px 20px 0 0;
+
+}
+#selected_second_section_image{
+    border: 2px solid rgba(0, 0, 255,1);
+    border-radius: 50%;
+    padding: 0px;
+    margin: 17px 20px 0 0;
+
+}
+/* .title_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+} */
+.section_title{
+    text-align: center;
+    font-weight: 700;
+    font-size: .9rem;
+  font-family: "Inter", sans-serif;
+
+    padding: 0 ;
+    margin: 0;
+}
+#small_font_size{
+    font-size: .77rem;
+
+}
+.sub_text{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+
+    padding: 0 0 0px 40px ;
+    /* margin: 0 0 30px 10px;  */
+    
+}
+.details_btn{
+    /* padding:10px 15px; */
+    padding: 0.65em 1.2em;
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    /* margin-top: 20px; */
+    align-self: center;
+    background-color: transparent;
+    color: #000;
+    font-weight: 500;
+  font-family: "Inter", sans-serif;
+
+    font-size: .65rem;
+    border: double 2px transparent;
+    background-image: linear-gradient(white,white),linear-gradient(75deg, red ,blue );
+    background-origin: border-box;
+    background-clip:padding-box,border-box ;
+    cursor: pointer;
+}
+.extra_margin_large{
+    margin-top: 24px;
+}
+.extra_margin_small{
+    margin-top: 18px;
+}
+.border-div{
+    border-bottom: 1px solid #B7B7B7;
+    position: relative;
+    margin: 20px 0;
+}
+.upper-border{
+    position: absolute;
+    border-bottom: 0.5px solid rgba(183, 183, 183,0.5);
+    width: 50%;
+    left: 40%;
+    transform: translateY(-93%);
+
+}
+.circle-shape{
+    background-color: #B7B7B7;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 20px solid white;
+}
+.car_title{
+    padding: 0;
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+  font-family: "Inter", sans-serif;
+
+}
+.car_details{
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    max-width: 768px;
+    padding: 50px 0px 0px 0px;
+    font-size: 18px;
+  font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #2C2C2C;
+}
+#carMargin{
+    padding: 0px 0px 50px 0px;
+
+}
+.car_features_container{
+    width: 45%;
+}
+.extra_features_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px 25px 0px;
+    border-bottom: 1px solid #B7B7B7;
+}
+.feature_name{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+  font-family: "Inter", sans-serif;
+
+    color: #2C2C2C;
+    font-weight: bold;
+}
+
+.characterstic_item{
+    width: 25%;
+}
+.characterstic_item_title{
+  font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #2C2C2C;
+    font-weight: 400;
+    padding: 0;
+}
+.characterstic_item_context{
+  font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #2C2C2C;
+    font-weight: 800;
+    padding: 0;
+}
+
+.suggestion_car_card {
+    background-color: #F8F8F8;
+    border-radius: 1rem;
+    padding: 21vh 1.3rem 2.5rem 1.3rem;
+    margin: 5px 20px 5px 0px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* width: calc((100% - 3 * 1%) / 3); */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    
+  }
+
+  .suggestion_car_card:hover{
+    transform: scale(1.01);
+  }
+  
+  .suggestion_card_details{
+    position: relative;
+    padding: .7rem 0 .7rem 1rem;
+    
+  }
+  .suggestion_card_image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding-bottom: 1rem;
+}
+  .suggestion_card_name {
+    font-size: 1rem;
+  font-family: "Inter", sans-serif;
+
+    color: black;
+    margin: 0;
+    font-weight: 500;
+    padding: 0;
+  }
+  .suggestion_card_model {
+    font-size: 1rem;
+  font-family: "Inter", sans-serif;
+
+    color: black;
+    font-weight: 700;
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  .suggestion_card_version{
+      font-size:0.9rem;
+  font-family: "Inter", sans-serif;
+
+      color: black;
+      font-weight: 400;
+      padding: 0 0 0 1rem;
+
+      margin: 0;
+  }
+  .suggestion_card_price{
+      font-size: .65rem;
+  font-family: "Inter", sans-serif;
+
+      color:#0047FF;
+      font-weight: 400;
+      margin: 0;
+      padding: 0 0 0 1rem;
+
+
+  }
+  
+  @media (max-width:734px){
+    .info_main_image{
+        width: 100%;
+    height: 84vh;
+    object-fit:cover;
+    }
+    .speed_details_container{
+        right: 0;
+        top: 79%;
+    }
+    .selected_car_container{
+        width: 45%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .border-div{
+        margin: 0px 12vw;
+    border-bottom: 1px solid #B7B7B7;
+
+    }
+    .circle-shape{
+        height: 70px;
+        width: 70px;
+        border: 10px solid white;
+    }
+    .car_features_container{
+        width: 80%;
+    }
+    .extra_features_container{
+        width: 80vw;
+        padding: 15px 0px 25px 0px;
+        border-bottom: 1px solid #B7B7B7;
+    }
+    .car_details{
+        padding: 30px 0px;
+    }
+    .characterstic_item{
+        width: 45%;
+        padding-bottom: 10px;
+    }  
+    .suggestion_card_details{
+        position: relative;
+        padding: .7rem 0 .7rem 0rem;
+        
+      } 
+      .suggestion_card_version{
+        padding: 0 0 0 0rem;
+    }
+      .suggestion_card_price{
+        padding: 0 0 0 0rem;
+    }
+    .suggestion_card_name {
+        font-size: .7rem;
+      }
+      .suggestion_card_model {
+        font-size: .7rem;
+      }
+.upper-border{
+display: none;
+}
+  }
+
+
+  @media (min-width:734px) and (max-width:1200px){
+    .selected_car_container{
+        width: 35%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .sub_text{
+        padding: 0 0 0px 10px ;
+    margin: 0 0 0px 0px;
+    }
+    .extra_margin_large{
+        margin-top: 26px;
+    }
+    .characterstic_item{
+        width: 45%;
+        padding-bottom: 20px;
+    }
+    .car_features_container{
+        width: 85%;
+    }
+    .extra_features_container{
+        width: 75vw;
+        padding: 15px 0px 35px 0px;
+        border-bottom: 1px solid #B7B7B7;
+    }
+    .details_btn{
+        /* padding:10px 15px; */
+        padding: 0.5em .6em;
+    }
+.upper-border{
+display: none;
+}
+  }

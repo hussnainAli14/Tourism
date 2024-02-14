@@ -1,0 +1,219 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+  background-color: #000;
+  min-height: 100vh;
+  background-image: radial-gradient(
+    23% 42% at 42% 52%,
+    rgba(20, 0, 255, 0.239),
+    transparent
+  ),
+  radial-gradient(
+    43% 73% at 53% 52%,
+    rgba(255, 0, 0, 0.122),
+    transparent
+  );
+}
+
+.bgGradient {  width: 100vw;
+  background: transparent;
+}
+.hero img {
+  align-items: center;
+  align-self: center;
+  width: 38rem;
+  margin: 0 auto;
+  display: block;
+}
+.mainText {
+  color: #fff;
+
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: normal;
+  margin: 0;
+}
+#Era {
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-bottom: 4rem;
+}
+.heroBtn {
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  font-weight: 400;
+  font-family:'Inter', sans-serif;
+  margin: 0 auto;
+  width: 5rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background-image: linear-gradient(to left,black 75%,rgba(255, 255, 255, 0.12));
+  /* box-shadow:10px -4px 1px black, 10px -5px 1px blue; */
+  position: relative;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  /* margin-top: 2rem; */
+
+  /* background-image: linear-gradient(to top right, red, blue); */
+
+
+}
+.heroBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    box-shadow: 2px -1px 1px 1.5px #0f00c15e;
+}
+
+/* .outer {
+  box-shadow:-0.08rem 0.1rem 10px red, 0.1rem -0.08rem 10px blue;
+
+} */
+.border-row{
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 6rem;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.outer {
+  box-shadow:-0.08rem 0.05rem 10px red , 0.1rem -0.08rem 10px blue
+ 
+}
+/* .outer1{
+  width: 55%;
+  box-shadow:0.08rem 0.05rem 10px red,0.01rem 0.05rem 4px blue ;
+  border-top-left-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  background-color: transparent;
+}
+.outer2 {
+  width: 45%;
+  box-shadow:0.08rem 0.05rem 10px rgba(0, 0, 255,1) ;
+
+  border-top-right-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  background-color: transparent;
+
+} */
+
+.learnMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #0066cc;
+  font-size: 0.6em;
+  /* font-family: SF Pro Display; */
+}
+.btn {
+  /* font-size: 1rem; */
+  color: #0066cc;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 1rem;
+  width: auto;
+}
+@media (max-width: 734px) {
+  .container {
+    background-image: radial-gradient(
+      36% 25% at 42% 52%,
+      rgba(20, 0, 255, 0.239),
+      transparent
+    ),
+    radial-gradient(
+      53% 30% at 59% 57%,
+      rgba(255, 0, 0, 0.122),
+      transparent
+    )
+  }
+  .hero img {
+    width: 80vw;
+  }
+  .mainText {
+    padding-bottom: 0.7rem;
+  }
+  .heroBtn {
+    margin-top: 1rem;
+  }
+  .learnMore{
+    display: none;
+  }
+}
+@media (min-width: 734px) {
+  #small {
+    display: none;
+  }
+}
+
+@media (min-width: 734px) and (max-width: 1200px) {
+  .container {
+    min-height: 100vh;
+    background-image: radial-gradient(
+        85% 40% at 19% 45%,
+        rgba(0, 0, 255, 0.2),
+        transparent
+      ),
+      url("../../../assets/Ellipse\ 62.png");
+    background-position: center right; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+
+  .mainText {
+    padding-bottom: 0.7rem;
+  }
+
+  .hero img {
+    align-items: center;
+    align-self: center;
+    width: 25rem;
+    margin: 1rem auto;
+    display: block;
+  }
+  .mainText {
+    color: #fff;
+
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: normal;
+    margin: 0;
+  }
+  #Era {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1.8rem;
+  }
+  /* .container {
+    background-image: radial-gradient(
+        85% 40% at 19% 45%,
+        rgba(0, 0, 255, 0.2),
+        transparent
+      ),
+      url("../../../assets/Ellipse\ 62.png");
+    background-position: center right; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  } */
+}
+/* .outer button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */

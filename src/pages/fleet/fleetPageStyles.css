@@ -1,0 +1,9 @@
+.fleetMain{
+    background-color: #F5F5F7;
+    overflow: hidden;
+    /* padding: 5rem 2rem; */
+}
+.newClass{
+display: flex;
+justify-content: center;
+}

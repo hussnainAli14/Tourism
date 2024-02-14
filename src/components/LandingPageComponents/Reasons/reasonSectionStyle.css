@@ -1,0 +1,91 @@
+.reasonMain{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0 6rem 0;
+    background-color: #FAFAFA;
+
+}
+.reason{
+    color: #1D1D1F;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    font-family: 'Inter' sans-serif;
+
+}
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.reasonCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem .2rem .5rem .2rem;
+    width: 19%;
+}
+.reasonImg{
+    margin-bottom: .2rem;
+}
+.reasonheading{
+    font-size: 1rem;
+    color: #1D1D1F;
+    font-weight: 500;
+    margin:0;
+    padding:.2rem 0;
+    text-align: center;
+    font-family: 'Inter' sans-serif;
+
+
+}
+.reasonDes{
+    font-size: .7rem;
+    color: #1D1D1F;
+    font-weight: 400;
+    margin:0;
+    text-align: center;
+    font-family: 'Inter' sans-serif;
+
+
+}
+
+@media (max-width:734px) {
+.reasonMain{
+    padding: 2rem;
+}
+.cardContainer{
+    flex-direction: column;
+    align-items: center;
+}
+.reasonCard{
+    width: 80%;
+}
+.reason{
+    text-align: center;
+    padding-top: 15rem;
+}
+}
+
+@media (min-width:734px) and (max-width:1200px) {
+    .reasonMain{
+        padding: 0rem 0 2rem 0;
+    }
+    .cardContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .reasonCard{
+        width: 40%;
+        max-width: 768px;
+    }
+    .reason{
+        text-align: center;
+        padding-top: 8rem;
+    }
+    }

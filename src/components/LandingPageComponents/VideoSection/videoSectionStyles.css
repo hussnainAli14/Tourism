@@ -1,0 +1,89 @@
+.vedioContent{
+    background-color: white;
+    padding: 5rem 6rem;
+}
+
+.vedioContent .videoPlayer {
+    width:42rem;
+    overflow: hidden; /* Ensure border radius is applied */
+    border-radius: 10px; /* Adjust the border radius as needed */
+    /* margin: 0 auto; Center the video player horizontally */
+    padding-top: 1.5rem;
+    
+  }
+  .vedioContent .mainTextVideo{
+    font-size:2rem;
+    color: black;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    /* font-family: SF Pro Display; */
+    /* padding-left: 2.5rem; */
+}
+.vedioContent .subTextVideo{
+  margin: 0;
+  font-size: 0.8rem;
+  color: #555555;
+  font-weight: 600;
+  text-align: left;
+  /* font-family: SF Pro Display; */
+  /* padding-left: 2.5rem; */
+
+}
+
+  .video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adjust the border radius to match the parent */
+    display: block; /* Ensure block-level display */
+  }
+  .videoBtn{
+    /* margin: .6rem auto; */
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 3rem; */
+    width: 8rem;
+    margin: 0.6rem 17rem;
+
+  }
+  #icon{
+    padding-left: 2px;
+  }
+  @media (max-width:734px) {
+    .vedioContent{
+      padding: 3rem 1rem;
+    }
+    .videoPlayer{
+      width: 100%;
+    }
+  }
+
+  @media (min-width:734px) and (max-width:1200px){
+    .vedioContent{
+      padding: 3rem 2.5rem;
+      width: 35rem;
+      /* justify-content: center; */
+
+    }
+    .vedioContent .videoPlayer {
+      /* width: 35rem; */
+    }
+    .videoBtn{
+      margin: 0.6rem 14rem;
+    }
+  }
+
+  /* @media (min-width:734px) and (max-width:840px){
+    .vedioContent{
+      padding: 3rem 1.5rem;
+    }
+    .vedioContent .videoPlayer {
+      width: 32rem;
+    }
+    .videoBtn{
+      margin: 0.6rem 13rem;
+    }
+  } */

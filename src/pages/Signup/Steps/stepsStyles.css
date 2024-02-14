@@ -1,0 +1,51 @@
+.step {
+  margin-top: 50px;
+}
+.header-title-step {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 0 0 10px 0;
+  margin: 0;
+  text-align: center;
+}
+.radio-btn-container {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+.textField-container {
+  margin-bottom: 20px;
+}
+.textField-Animation {
+  animation: fly_Textfield 0.5s ease forwards;
+  animation-delay: 0s;
+}
+.validation-field-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 45px 0px 60px 0px;
+}
+.small-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.desc-margin {
+  margin: 30px 0 80px 0;
+}
+
+@media (max-width: 600px) {
+  .small-screen {
+    display: none;
+  }
+}
+
+@keyframes fly_Textfield {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,167 @@
+.inclusionMain {
+  background-color: #fafafa;
+  padding:5rem 0rem 5rem 4rem;
+  height: 70vh;
+}
+.inclusionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+.inclusionHeading {
+  color: #1d1d1f;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 22.5rem;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+.subscribeText {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: normal;
+  color: #036ad1; 
+   margin-bottom: 0;
+   margin-right: 4rem;
+}
+
+.inclusionCards {
+  background-color: white;
+  width: 20rem;
+  height: 12rem;
+  padding: 1.5rem 0.1rem 2rem 0.8rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.cardHeader {
+  font-size: 1.6rem;
+  color: #1D1D1F;
+  margin: 0;
+  padding-bottom: 0.6rem;
+  font-weight: 700;
+}
+.cardDes {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 550;
+  color: #1D1D1F;
+  line-break:auto;
+
+}
+.inclusionCards img {
+  /* width: 1.7vw; */
+  width: 1.7rem;
+  height: 1.7rem;
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.swiperBtn {
+  /* position: fixed; */
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: pointer;
+  margin: 2rem 5rem;
+}
+.bgStyles {
+  background-color: lightgrey;
+  border-radius: 50%;
+  margin-right: 10px;
+  height: 2.2rem;
+  width: auto;
+  margin-left: .5rem;
+  /*  */
+}
+@media (max-width: 734px) {
+  .subscribeText {
+    display: none;
+  }
+  .inclusionCards {
+    margin-left: 5vw;
+    width: 75%;
+  }
+  .inclusionHeading {
+    width: 60vw;
+  }
+  .cardDes {
+    width: auto;
+  }
+}
+/* @media (max-width: 1024px) {
+ .inclusionMain{
+  padding-bottom: 10rem;
+ }
+  .inclusionCards {
+    width: 75%;
+  }
+  .inclusionHeading {
+    width: 75vw;
+  }
+  .cardDes {
+    width: auto;
+    font-size: 0.7rem;
+  }
+  .cardHeader {
+    font-size: 1.3rem;
+    
+  }
+  
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .cardDes {
+    width: auto;
+    font-size: 0.8rem;
+  }
+
+}
+@media (min-width: 1024px) and (max-width: 2024px) {
+ 
+  .inclusionCards {
+    width: 75%;
+    padding: 10%;
+  }
+  .inclusionHeading {
+    width: 50vw;
+  }
+  .cardDes {
+    width: auto;
+    font-size: 0.7;
+  }
+  .cardHeader {
+    font-size: 1.3rem;
+    
+  }
+  
+} */
+
+@media (min-width:734px) and (max-width:1200px) {
+  .subscribeText{
+    display: none;
+  }
+  .bgStyles {
+    background-color: lightgrey;
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 1.5rem;
+  }
+  .swiperBtn {
+    /* position: fixed; */
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+    margin: 2rem 1rem;
+  }
+}

@@ -1,0 +1,40 @@
+.content{
+    background-color: white;
+    padding: 5rem 0rem 6rem 5rem;
+}
+.mainTextCarousal{
+    font-family: 'Inter',sans-serif;
+    font-size: 2rem;
+    color: #1D1D1F;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    /* font-family: SF Pro Display; */
+
+}
+.subTextCarousal{
+    font-family: 'Inter',sans-serif;
+    margin: 0;
+    font-size: 0.8rem;
+    color: #1D1D1F;
+    font-weight: 500;
+    text-align: left;
+    /* font-family: SF Pro Display; */
+
+}
+
+@media (max-width:734px){
+    .content{
+    padding: 3rem 1rem 3rem 1rem;
+
+    }
+    .mainTextCarousal{
+     font-size: 1.5rem;
+     }
+  }
+@media (min-width:734px) and (max-width:1200px) {
+    .content{
+    padding: 3rem 2rem 3rem 2rem;
+
+    }
+}

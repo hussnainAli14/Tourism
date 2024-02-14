@@ -1,0 +1,128 @@
+.mobileMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #efeff2a1;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mobileMain .firstSectionMainText{
+    font-size: 2.8rem;
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
+    font-family: 'Inter',sans-serif;
+    width: 17.5rem;
+}
+.mobileMain .secondSection{
+    padding: 0px;
+    display: contents;
+}
+.mobileMain .secondSectionres{
+    padding: 0px;
+}
+.mobileMain .firstSectionSubText{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter',sans-serif;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: .6rem;
+    padding-top: 2px;
+    color: #0171E3;
+    font-weight: 500;
+    padding-left: 15px;
+    /* text-align: left; */
+
+}
+.mobileMain .firstSection{
+    width: 15rem;
+    margin: 0 auto;
+   
+}
+
+.mobileMain .secondSection img{
+    height: auto;
+    width: 26rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+@media (max-width:734px) {
+    .mobileMain{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column-reverse;
+    }
+.secondSectionres{
+    padding-bottom: 1rem;
+}
+.mobileMain .firstSection{
+    width: 90vw;
+    margin: 0 auto;
+   
+}
+.mobileMain .firstSectionMainText{
+font-size: 1.5rem;
+text-align: center;
+padding-top: 100px;
+}
+.mobileMain .firstSectionSubText{
+    text-decoration: none;
+    padding-bottom: 0;
+}
+.mobileMain .secondSection img{
+    width: 60vw;
+}
+}
+/* @media (min-width:1600px) and (max-width:1830px) {
+    .mobileMain .firstSectionMainText{
+        font-size: 2.5rem;
+    }}
+@media (min-width:1830px) and (max-width:2200px) {
+    .mobileMain .firstSectionMainText{
+        font-size: 3rem;
+    }
+}
+@media (min-width:2200px) {
+    .mobileMain .firstSectionMainText{
+        font-size: 3.5rem;
+    }
+} */
+
+
+
+@media (min-width:734px) and (max-width:1200px) {
+    .mobileMain{
+        display: flex;
+            justify-content: center;
+            align-items:flex-start;
+            flex-direction: column-reverse;
+            font-size: 2rem;
+            font-weight: 650;
+        
+        }
+        .mobileMain .firstSection{
+            width:  22rem;
+            margin: 0 auto;
+            /* font-size: 2.5rem; */
+        }
+        .mobileMain .firstSectionMainText{
+            text-align: center;
+            padding-top: 120px;
+            width: 100%;
+            }
+            .mobileMain .secondSection img{
+                height: auto;
+                width: 30rem;
+                transform: translateX(-90px);
+               /* margin-left:5rem;/ */
+               margin: 0 auto;
+            }
+          
+}
